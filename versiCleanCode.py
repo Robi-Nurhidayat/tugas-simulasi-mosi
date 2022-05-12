@@ -24,11 +24,13 @@
 
 def membangkitkanBilanganAcak(konstanta,modulus,bilanganAwal):
 
-    bilanganSaatIni = (konstanta * bilanganAwal) % modulus
+    # perhitungan membangkitkan bilangan acak
+    
+    hasil = (konstanta * bilanganAwal) % modulus
 
     for count in range(1,6):
-        bilanganSaatIni = (konstanta * bilanganSaatIni) % modulus
-        uniform = bilanganSaatIni / modulus
+        hasil = (konstanta * hasil) % modulus
+        uniform = hasil / modulus
 
         print(f"{bilanganSaatIni} \t\t {uniform}")
 
